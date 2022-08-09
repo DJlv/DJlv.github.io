@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>tool</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="">
+    
+    <link rel="preload" href="/assets/css/0.styles.8071c270.css" as="style"><link rel="preload" href="/assets/js/app.395a078c.js" as="script"><link rel="preload" href="/assets/js/2.7e8b5cf7.js" as="script"><link rel="preload" href="/assets/js/12.3bc1da42.js" as="script"><link rel="prefetch" href="/assets/js/10.ab4346e2.js"><link rel="prefetch" href="/assets/js/11.939901d7.js"><link rel="prefetch" href="/assets/js/3.a72414bb.js"><link rel="prefetch" href="/assets/js/4.f2395b78.js"><link rel="prefetch" href="/assets/js/5.a4300ced.js"><link rel="prefetch" href="/assets/js/6.f5002f39.js"><link rel="prefetch" href="/assets/js/7.eed225de.js"><link rel="prefetch" href="/assets/js/8.2ec4bb50.js"><link rel="prefetch" href="/assets/js/9.44345da2.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.8071c270.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  笔记
+</a></div><div class="nav-item"><a href="/tool/tool.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  工具安装
+</a></div><div class="nav-item"><a href="/problem/problem.html" class="nav-link">
+  报错解决
+</a></div><div class="nav-item"><a href="/arithmetic/arithmetic.html" class="nav-link">
+  算法
+</a></div><div class="nav-item"><a href="/fuctiuon/fuction.html" class="nav-link">
+  java类
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  笔记
+</a></div><div class="nav-item"><a href="/tool/tool.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  工具安装
+</a></div><div class="nav-item"><a href="/problem/problem.html" class="nav-link">
+  报错解决
+</a></div><div class="nav-item"><a href="/arithmetic/arithmetic.html" class="nav-link">
+  算法
+</a></div><div class="nav-item"><a href="/fuctiuon/fuction.html" class="nav-link">
+  java类
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>tool</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/tool/tool.html#mysql" class="sidebar-link">mysql</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/tool/tool.html#安装" class="sidebar-link">安装</a></li></ul></li><li><a href="/tool/tool.html#idea" class="sidebar-link">idea</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/tool/tool.html#nacos" class="sidebar-link">nacos</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/tool/tool.html#win10端口" class="sidebar-link">win10端口</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/tool/tool.html#git-使用" class="sidebar-link">git 使用</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/tool/tool.html#ip-查找工具" class="sidebar-link">ip 查找工具</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/tool/tool.html#修改github-路径" class="sidebar-link">修改github 路径</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/tool/tool.html#启动前端命令" class="sidebar-link">启动前端命令</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="tool"><a href="#tool" class="header-anchor">#</a> tool</h1> <h2 id="mysql"><a href="#mysql" class="header-anchor">#</a> mysql</h2> <h3 id="安装"><a href="#安装" class="header-anchor">#</a> 安装</h3> <div class="language-SQL extra-class"><pre class="language-sql"><code><span class="token comment">-- 初始化MySQL</span>
+    mysqld <span class="token comment">--initialize-insecure</span>
+
+<span class="token comment">--  注册MySQL服务</span>
+    mysqld <span class="token operator">-</span>install
+
+<span class="token comment">--   启动MySQL服务</span>
+    net <span class="token keyword">start</span> mysql 
+<span class="token comment">--   停止mysql服务</span>
+    net stop mysql
+
+<span class="token comment">--   修改默认账户密码</span>
+    mysqladmin <span class="token operator">-</span>u root password <span class="token number">1234</span>
+    <span class="token comment">-- 登陆</span>
+    mysql <span class="token operator">-</span>uroot <span class="token operator">-</span>p1234
+</code></pre></div><h2 id="idea"><a href="#idea" class="header-anchor">#</a> idea</h2> <ul><li>不需要提交文件/隐藏文件</li></ul> <div class="language- extra-class"><pre class="language-text"><code>**/mvnw
+**/mvnw.cmd
+
+**/.mvn
+**/target/
+.idea
+
+**/.gitignore
+</code></pre></div><h2 id="nacos"><a href="#nacos" class="header-anchor">#</a> nacos</h2> <ul><li>启动
+startup.cmd -m standalone</li></ul> <h2 id="win10端口"><a href="#win10端口" class="header-anchor">#</a> win10端口</h2> <ul><li><p>查看
+netstat -aon|findstr &quot;10000&quot;</p></li> <li><p>查询端口进程
+tasklist|findstr &quot;41956&quot;</p></li> <li><p>终止端口
+taskkill /f /t /im yundetectservice.exe</p></li></ul> <h2 id="git-使用"><a href="#git-使用" class="header-anchor">#</a> git 使用</h2> <ul><li>git status</li> <li>git log 查看提交日志</li> <li>git checkout -b -zr  创建新分支</li> <li>git push origin zr  提交到新分支</li> <li>git pull --rebase  拉取并自动合并</li> <li>git commit --ame  查看修改东西</li></ul> <h2 id="ip-查找工具"><a href="#ip-查找工具" class="header-anchor">#</a> ip 查找工具</h2> <p>https://tool.lu/ip/</p> <h2 id="修改github-路径"><a href="#修改github-路径" class="header-anchor">#</a> 修改github 路径</h2> <p>C:\Windows\System32\drivers\etc</p> <h2 id="启动前端命令"><a href="#启动前端命令" class="header-anchor">#</a> 启动前端命令</h2> <p>npm run dev</p></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.395a078c.js" defer></script><script src="/assets/js/2.7e8b5cf7.js" defer></script><script src="/assets/js/12.3bc1da42.js" defer></script>
+  </body>
+</html>
